@@ -1,0 +1,71 @@
+.walk-route {
+  width: min(1000px, 90%); /* 最大寬度 1000px，但手機時不要超過畫面的 90%。 */
+  margin: 60px auto;
+}
+
+.route {
+  background: #fff;
+  padding: 30px; /* 控制文字(內容)和邊界的距離」*/
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); /* 左右偏移 , 上下偏移 , 模糊程度 , 透明度 */
+}
+
+.route-info {
+  display: flex;
+  gap: 20px;
+  /* 控制元素間距 */
+  margin-top: 25px;
+}
+
+.route-info span {
+  background: #f5f5f5;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.timeline {
+  /* border: 3px black solid; */
+  margin-top: 30px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+}
+
+.time {
+  /* border: 3px black solid; */
+  font-weight: bold;
+  width: 60px;
+}
+
+.marker {
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0; /* 固定大小 */
+}
+
+.dot {
+  border: 3px solid #888;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+}
+
+.line {
+  width: 2px;
+  height: 60px;
+  background: #ddd;
+  margin-top: 4px;
+}
+.timeline-content {
+  /* border: 3px black solid; */
+}
+
+.timeline-item:last-child .line {
+  display: none;
+}

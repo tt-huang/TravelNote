@@ -1,0 +1,98 @@
+/* =========================
+   全域設定
+========================= */
+
+/* 移除瀏覽器預設的 margin、padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 將所有標題的粗體取消 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 設定整個網站背景顏色 */
+body {
+  background: #f8f8f8;
+}
+
+/* =========================
+   導覽列 (Navigation)
+========================= */
+
+/* 導覽列底部加上一條淺灰色分隔線 */
+nav {
+  border-bottom: 1px solid #eee;
+
+  position: fixed; /* 固定在畫面 */
+  top: 0; /* 貼齊上方 */
+  left: 0; /* 貼齊左邊 */
+  width: 100%; /* 寬度填滿 */
+  background: #f8f8f8; /* 一定要有背景色 */
+
+  z-index: 1000; /* 避免被其他元素蓋住 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* 陰影 */
+}
+
+/* 導覽選單 */
+nav ul {
+  display: flex; /* 使用 Flex 排列 */
+  justify-content: center; /* 水平置中 */
+  list-style: none; /* 移除項目符號 */
+  margin: 20px 0; /* 上下留白 */
+}
+
+/* 導覽連結 */
+nav li a {
+  margin: 0 20px; /* 左右間距 */
+  color: gray; /* 文字顏色 */
+  text-decoration: none; /* 移除底線 */
+  font-size: 16px;
+  padding-bottom: 0.3rem; /* 預留 hover 底線空間 */
+  transition: all 0.2s ease; /* 動畫效果 */
+}
+
+/* 滑鼠移入效果 */
+nav li a:hover {
+  color: black;
+  border-bottom: 3px solid gray;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 30px 0;
+
+  background: gray;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* =========================
+   Hero 區域
+========================= */
+
+.hero {
+  margin: 80px auto 40px; /* 上80px、左右自動置中、下60px */
+  text-align: center; /* 讓裡面的文字水平置中 */
+}
+
+.hero h1 {
+  font-size: 2rem; /* 標題大小（1rem = 根元素字體大小，通常16px） */
+  color: #777; /* 文字顏色 */
+}
+
+.hero p {
+  color: #777; /* 文字顏色 */
+}

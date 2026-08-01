@@ -1,0 +1,107 @@
+.hero {
+  width: min(700px, 90%);
+  text-align: center;
+  margin: 80px auto 60px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+.hero .subtitle {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.hero .description {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* =========================
+   卡片區
+========================= */
+
+.info {
+  width: min(1100px, 90%);
+  /* 最大寬度 1100px，小螢幕時改成 90% */
+
+  margin: 50px auto;
+  /* 上下 50px，左右自動置中 */
+
+  display: flex;
+  flex-wrap: wrap;
+  /* 空間不足時自動換行 */
+
+  justify-content: center;
+  /* 卡片水平置中 */
+
+  gap: 30px;
+  /* 卡片之間的間距 */
+}
+
+/* =========================
+   卡片
+========================= */
+
+.travel {
+  cursor: pointer;
+  flex: 0 0 300px; /* 不放大、不縮小，固定寬度 300px */
+  padding: 0;
+
+  text-decoration: none;
+
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  /* 圓角 */
+
+  overflow: hidden; /* 超出圓角範圍的圖片會被裁切 */
+
+  display: flex;
+  flex-direction: column; /* 圖片與文字垂直排列 */
+
+  align-items: center; /* 水平置中 */
+
+  transition: all 0.3s ease;
+}
+
+/* 滑鼠移到卡片 */
+.travel:hover {
+  transform: translateY(-5px); /* 卡片往上移 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* 加上陰影 */
+}
+
+/* =========================
+   卡片圖片
+========================= */
+
+.travel img {
+  width: 100%; /* 圖片寬度填滿卡片 */
+  aspect-ratio: 4 / 3; /* 維持 4:3 比例 */
+  object-fit: cover; /* 保持比例裁切填滿 */
+  transition: all 0.3s ease;
+}
+
+/* 滑鼠移到圖片 */
+.travel :hover img {
+  transform: scale(1.05); /* 放大圖片 */
+}
+
+/* =========================
+   卡片標題
+========================= */
+
+.travel h3 {
+  padding: 20px;
+  color: #555;
+  font-size: 16px;
+}
+.travel p {
+  padding: 20px;
+  color: #555;
+  font-size: 16px;
+}

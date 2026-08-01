@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+}
+
+/* 左邊項目列 */
+.left {
+  margin: 20px;
+  padding-top: 100px;
+  width: 200px;
+
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+}
+
+.left ul {
+  list-style: none; /* 移除項目符號 */
+}
+
+.left li a {
+  text-decoration: none;
+}
+
+.right {
+  padding-top: 100px;
+  flex: 1;
+  margin: 20px;
+}
+
+/* 右邊邊項目列 */
+
+.article {
+  margin-bottom: 80px;
+
+  scroll-margin-top: 80px;
+}
+
+.description {
+  color: #666;
+}
+.spot-photo {
+  display: flex;
+}
+
+.spot-photo img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.recommend {
+  margin-top: 20px;
+}
+
+.recommend ul {
+  list-style: none;
+  margin-top: 5px;
+}
+
+.recommend li {
+  color: #666;
+}
+
+.map a {
+  text-decoration: none;
+  color: rgb(205, 138, 138);
+}

@@ -1,0 +1,71 @@
+body {
+  font-family: "Chiron GoRound TC", sans-serif;
+}
+
+/* =========================
+   Hero 區域
+========================= */
+
+.hero {
+  margin: 80px auto 40px; /* 上80px、左右自動置中、下60px */
+  text-align: center; /* 讓裡面的文字水平置中 */
+}
+
+.hero h1 {
+  font-size: 2rem; /* 標題大小（1rem = 根元素字體大小，通常16px） */
+  color: #777; /* 文字顏色 */
+}
+
+.hero p {
+  color: #777; /* 文字顏色 */
+}
+
+/* =========================
+   cafe卡片區域
+========================= */
+
+.coffee-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cafe-card {
+  border: 1px solid #ddd;
+  width: 300px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding-bottom: 20px; /* 底下留白 */
+}
+
+.cafe-card:hover {
+  transform: scale(1.08); /* 滑鼠移上去只有圖片慢慢放大 */
+  transition: 0.4s;
+}
+
+.cafe-card h2 {
+  margin: 10px 20px;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.cafe-card p {
+  margin: 5px 20px;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.map {
+  margin: 5px 20px 20px;
+  font-size: 0.8rem;
+  color: rgb(205, 138, 138);
+  text-decoration: none;
+}
+
+.cafe-photo img {
+  width: 100%;
+  border-radius: 12px;
+  aspect-ratio: 4/3; /* 決定圖片顯示區域的長寬比例， 4 / 3 的意思是：寬 = 4 高 = 3*/
+  object-fit: cover; /* 保持圖片比例，填滿整個框框，不夠的地方裁掉*/
+}
