@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Tokyo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/explore.css" />
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+
+        <!-- <li>
+          <a href="">景點</a>
+        </li>
+
+        <li>
+          <a href="">咖啡</a>
+        </li>
+
+        <li>
+          <a href="">散步</a>
+        </li>
+
+        <li>
+          <a href="">漫遊記</a>
+        </li> -->
+      </ul>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero">
+      <h1>Explore Tokyo</h1>
+      <p class="description">Discover the city one step at a time.</p>
+    </section>
+
+    <!-- Filter -->
+    <section class="filter">
+      <button class="filter-btn active" data-category="all">All</button>
+
+      <button class="filter-btn" data-category="cafe">Cafe</button>
+
+      <button class="filter-btn" data-category="spot">Spot</button>
+
+      <button class="filter-btn" data-category="walk">Walk</button>
+
+      <button class="filter-btn" data-category="journal">Journal</button>
+    </section>
+    <!-- 卡片區域 -->
+    <section class="container">
+      <!-- 卡片1 -->
+      <a href="article.html" class="card-link">
+        <article class="card" data-category="cafe">
+          <div class="card-photo">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJutnadDh4TSJfwh3sPjJRTDnS3BBncpLF8NhDkUKFyw&s=10"
+              alt=""
+            />
+          </div>
+          <p class="category">Cafe</p>
+          <h1>三間值得再訪的咖啡店</h1>
+          <p class="date">2026.08.03</p>
+          <div class="tags">
+            <span>Kuramae</span>
+            <span>Dessert</span>
+          </div>
+        </article>
+      </a>
+
+      <!-- 卡片2 -->
+      <a href="article.html" class="card-link">
+        <article class="card" data-category="walk">
+          <div class="card-photo">
+            <img
+              src="https://images.unsplash.com/photo-1611065695756-1d50152352e5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dWVub3xlbnwwfHwwfHx8Mg%3D%3D"
+              alt=""
+            />
+          </div>
+          <p class="category">Walk</p>
+          <h1>上野散步半日遊</h1>
+          <p class="date">2026.08.03</p>
+          <div class="tags">
+            <span>Ueno</span>
+            <span>Park</span>
+          </div>
+        </article>
+      </a>
+    </section>
+
+    <footer>
+      <p>© 2026 Travel Note</p>
+    </footer>
+
+    <script src="./JS/explore.js"></script>
+  </body>
+</html>

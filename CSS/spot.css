@@ -5,8 +5,8 @@
 /* 左邊項目列 */
 .left {
   margin: 20px;
-  padding-top: 100px;
-  width: 200px;
+  padding-top: 50px;
+  width: 150px;
 
   position: sticky;
   top: 20px;
@@ -22,7 +22,7 @@
 }
 
 .right {
-  padding-top: 100px;
+  padding-top: 50px;
   flex: 1;
   margin: 20px;
 }

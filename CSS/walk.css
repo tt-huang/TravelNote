@@ -1,3 +1,7 @@
+body {
+  font-family: "Chiron GoRound TC", sans-serif;
+}
+
 .walk-route {
   width: min(1000px, 90%); /* 最大寬度 1000px，但手機時不要超過畫面的 90%。 */
   margin: 60px auto;
@@ -12,8 +16,7 @@
 
 .route-info {
   display: flex;
-  gap: 20px;
-  /* 控制元素間距 */
+  gap: 20px; /* 控制元素間距 */
   margin-top: 25px;
 }
 
@@ -24,23 +27,22 @@
   font-size: 0.9rem;
 }
 
-.timeline {
-  /* border: 3px black solid; */
+.content {
   margin-top: 30px;
 }
 
-.timeline-item {
+.timeline {
   display: flex;
   gap: 20px;
 }
 
-.time {
-  /* border: 3px black solid; */
+/* .time {
   font-weight: bold;
   width: 60px;
-}
+} */
 
 .marker {
+  margin: 5px 0;
   width: 20px;
   display: flex;
   flex-direction: column;
@@ -58,14 +60,25 @@
 
 .line {
   width: 2px;
-  height: 60px;
+  height: 70px;
   background: #ddd;
   margin-top: 4px;
-}
-.timeline-content {
-  /* border: 3px black solid; */
+  margin-bottom: 4px;
 }
 
-.timeline-item:last-child .line {
+.timeline:last-child .line {
   display: none;
+}
+
+.spot-info {
+  margin: 5px 0;
+}
+
+.spot-info span {
+  display: inline-block;
+  margin-top: 3px;
+  background: #f5f5f5;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
 }

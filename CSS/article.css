@@ -1,0 +1,53 @@
+.article-hero {
+  width: min(1000px, 90%);
+  margin: 80px auto 40px;
+}
+.article-hero img {
+  width: 100%;
+  border-radius: 16px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.article-content {
+  width: min(700px, 90%);
+  margin: auto;
+}
+
+.category {
+  color: #8b6f47;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.article-content h1 {
+  margin: 12px 0;
+  font-size: 2rem;
+  color: #444;
+}
+
+.date {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tags span {
+  background: #f4f1ec;
+  color: #8b6f47;
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 0.75rem;
+}
+
+.article-content p {
+  line-height: 2;
+  color: #555;
+}
