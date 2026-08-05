@@ -1,4 +1,4 @@
-.article-hero {
+/* .article-hero {
   width: min(1000px, 90%);
   margin: 80px auto 40px;
 }
@@ -7,11 +7,19 @@
   border-radius: 16px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-}
+} */
 
 .article-content {
+  /* border: 3px black solid; */
   width: min(700px, 90%);
-  margin: auto;
+  margin: 70px auto;
+}
+
+.article-content img {
+  width: 100%;
+  border-radius: 16px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .category {
